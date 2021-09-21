@@ -51,7 +51,6 @@ const Edit = ({ match }) => {
 
       console.log(data);
     };
-
     fetching();
   }, [match.params.id]);
 
