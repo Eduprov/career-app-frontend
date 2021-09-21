@@ -10,7 +10,7 @@ const Edit = ({ match }) => {
   const [gender, processGender] = useState("");
   const [marital, processMarital] = useState("");
   const [mobile, processMobile] = useState("");
-  const [ssl, processSslc] = useState("");
+  const [sslc, processSslc] = useState("");
   const [puc, processPuc] = useState("");
   const [grad, processGrad] = useState("");
   const [postgrad, processPostGrad] = useState("");
