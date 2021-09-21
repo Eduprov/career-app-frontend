@@ -320,7 +320,18 @@ const ApplicationForm = ({ history }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div
+        style={{
+          backgroundColor: "#73AC5F",
+          clear: "both",
+          position: "relative",
+          height: "100px",
+          marginTop: "-200px",
+        }}
+        className="mt-5 pt-5"
+      >
+        <Footer />
+      </div>
     </>
   );
 };
