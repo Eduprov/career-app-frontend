@@ -10,7 +10,7 @@ const Signup = () => {
   }
   return (
     <>
-      <div className="form-container">
+      <div className="form-container mt-5">
         <span className="close-btn">×</span>
         <div className="form-content-left ">
           <img className="form-img" src="img-2.svg" alt="spaceship" />
