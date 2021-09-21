@@ -126,7 +126,7 @@ const FormSignup = () => {
         <div className="form-inputs">
           <label className="form-label">Profile Pic</label>
           <input
-            className="form-input"
+            className="form-input form-control"
             type="file"
             placeholder="Select Profile pic"
             onChange={(e) => postDetails(e.target.files[0])}

@@ -10,7 +10,7 @@ const Admin = () => {
   }
   return (
     <>
-      <div className="form-container">
+      <div className="form-container mt-5">
         <span className="close-btn">×</span>
         <div className="form-content-left ">
           <img className="form-img" src="admin.svg" alt="spaceship" />
