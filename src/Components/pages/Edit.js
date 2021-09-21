@@ -65,7 +65,7 @@ const Edit = ({ match }) => {
       gender,
       marital,
       mobile,
-      ssl,
+      sslc,
       puc,
       grad,
       postgrad,

@@ -3,10 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-    
       <div
         className="container-fluid mt-4"
-        style={{ backgroundColor: "#73AC5F", height: "100px" }}
+        style={{
+          backgroundColor: "#73AC5F",
+          height: "100px",
+          position: "absolute",
+          bottom: "0",
+          width: "100%",
+        }}
       >
         <div className="row">
           <div className="col-md-12 text-center">
