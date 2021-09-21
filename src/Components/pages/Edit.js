@@ -27,7 +27,7 @@ const Edit = ({ match }) => {
   useEffect(() => {
     const fetching = async () => {
       const { data } = await axios.get(
-        `http://localhost:5000/api/interviewapi/get/${match.params.id}`
+        `https://career-app-api-url.herokuapp.com/api/interviewapi/get/${match.params.id}`
       );
       processName(data.name);
       processEmail(data.email);
@@ -57,7 +57,7 @@ const Edit = ({ match }) => {
 
   const [message, updateMessage] = useState("");
   const updateInfo = () => {
-    var url = `http://localhost:5000/api/interviewapi/${match.params.id}`;
+    var url = `https://career-app-api-url.herokuapp.com/api/interviewapi/${match.params.id}`;
     var jsonData = {
       name,
       email,

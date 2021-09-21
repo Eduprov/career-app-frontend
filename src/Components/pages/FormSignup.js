@@ -37,6 +37,35 @@ const FormSignup = () => {
     }
   };
 
+  const postDetails = (pics) => {
+    if (
+      pics ===
+      "https://res.cloudinary.com/dv5jjlsd7/image/upload/v1631444571/user_1_qy7hlx.png"
+    ) {
+      return setPicMessage("Please Select an Image");
+    }
+    setPicMessage(null);
+    if (pics.type === "image/jpeg" || pics.type === "image/png") {
+      const data = new FormData();
+      data.append("file", pics);
+      data.append("upload_preset", "noteszipper");
+      data.append("cloud_name", "dv5jjlsd7");
+      fetch("https://api.cloudinary.com/v1_1/dv5jjlsd7/image/upload", {
+        method: "post",
+        body: data,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setPic(data.url.toString());
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      return setPicMessage("Please Select an Image");
+    }
+  };
+
   return (
     <div className="form-content-right">
       <form className="form" onSubmit={save}>
@@ -90,6 +119,15 @@ const FormSignup = () => {
             placeholder="Enter your password"
             value={confirmpassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+        </div>
+        <div className="form-inputs">
+          <label className="form-label">Profile Pic</label>
+          <input
+            className="form-input"
+            type="file"
+            placeholder="Select Profile pic"
+            onChange={(e) => postDetails(e.target.files[0])}
           />
         </div>
         <button className="form-input-btn">Sign up</button>
