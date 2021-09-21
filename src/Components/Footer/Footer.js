@@ -9,7 +9,7 @@ const Footer = () => {
           backgroundColor: "#73AC5F",
           clear: "both",
           position: "relative",
-          height: "300px",
+          height: "100px",
           marginTop: "-200px",
         }}
       >
