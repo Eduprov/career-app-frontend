@@ -13,6 +13,7 @@ const FormSignup = () => {
   );
   const [message, updateMessage] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
+  const [setpicmessage, setPicMessage] = useState("");
 
   const history = useHistory();
   const dispatch = useDispatch();
@@ -79,6 +80,7 @@ const FormSignup = () => {
             <span class="sr-only"></span>
           </div>
         )}
+        <p className="text-success">{setpicmessage}</p>
         <p className="text-success">{message}</p>
         <p className="text-success">{error}</p>
         <div className="form-inputs">
