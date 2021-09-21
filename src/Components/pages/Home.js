@@ -77,7 +77,7 @@ const Home = () => {
             />
           </div>
           <div className="col-md-6 mt-5 pt-5">
-            <h4 className="text-center">interview process</h4>
+            <h4 className="text-center">Interview Process</h4>
             <h5 className="text-center">
               We pick the finest candidates and conduct an interview with basic
               etiquttes.
@@ -93,7 +93,7 @@ const Home = () => {
             />
           </div>
           <div className="col-md-6 mt-5 pt-5">
-            <h4 className="text-center">Managerial round</h4>
+            <h4 className="text-center">Managerial Round</h4>
             <h5 className="text-center">
               The manager will conduct an interview keeping the company
               standards in mind.
@@ -105,7 +105,7 @@ const Home = () => {
             <img src={HRImg} className="banner-img-hr" alt="Hr section" />
           </div>
           <div className="col-md-6 mt-5 pt-5">
-            <h4 className="text-center"> HR round </h4>
+            <h4 className="text-center"> HR Round </h4>
             <h5 className="text-center">
               Once the candidate is selected the HR will be taking in to conduct
               induction and explain company policies and procedures.
