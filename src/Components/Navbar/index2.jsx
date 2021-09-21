@@ -9,6 +9,7 @@ import { useMediaQuery } from "react-responsive";
 import { useDispatch, useSelector } from "react-redux";
 import { AccessibilityTwo } from "./accessibility2";
 import { AccessibilityThree } from "./accessibility3";
+import { MobileNavLinksTwo } from "./mobileNavLinks2";
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -51,10 +52,10 @@ export function NavbarTwo(props) {
         <Logo />
       </LeftSection>
       <MiddleSection>{!isMobile && <NavLinks />}</MiddleSection>
-        <RightSection>
-          {!isMobile && <AccessibilityThree />}
-          {isMobile && <MobileNavLinks />}
-        </RightSection>
+      <RightSection>
+        {!isMobile && <AccessibilityThree />}
+        {isMobile && <MobileNavLinksTwo />}
+      </RightSection>
     </NavBarContainer>
   );
 }

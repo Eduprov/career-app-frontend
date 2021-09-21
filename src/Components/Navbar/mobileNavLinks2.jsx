@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Accessibility } from "./accessibility";
+import { AccessibilityThree } from "./accessibility3";
 import { MenuToggle } from "./menuToggle";
 
 const NavLinksContainer = styled.div`
@@ -21,7 +22,7 @@ const LinksWrapper = styled.ul`
   position: fixed;
   top: 65px;
   left: 0;
-  z-index:1000
+  z-index: 1000;
 `;
 
 const LinkItem = styled.li`
@@ -44,8 +45,13 @@ const Marginer = styled.div`
   height: 2em;
 `;
 
-export function MobileNavLinks(props) {
+export function MobileNavLinksTwo(props) {
   const [isOpen, setOpen] = useState(false);
+
+    const logoutHandler = () => {
+      dispatch(logout());
+      history.push("/");
+    };
 
   return (
     <NavLinksContainer>
@@ -53,13 +59,10 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-          <Link href="/profile"></Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="/application"></Link>
-        </LinkItem>
+            <Link href="/application">Application Form</Link>
+          </LinkItem>
           <Marginer />
-          <Accessibility />
+          <AccessibilityThree />
         </LinksWrapper>
       )}
     </NavLinksContainer>
