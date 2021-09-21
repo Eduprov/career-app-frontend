@@ -326,7 +326,7 @@ const ApplicationForm = ({ history }) => {
           clear: "both",
           position: "relative",
           height: "100px",
-          marginTop: "-200px",
+          marginTop: "500px",
         }}
         className="mt-5 pt-5"
       >
