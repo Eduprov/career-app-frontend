@@ -7,9 +7,10 @@ const Footer = () => {
         className="container-fluid mt-4"
         style={{
           backgroundColor: "#73AC5F",
-          height: "100px",
-          bottom: "0",
-          width: "100%",
+          clear: "both",
+          position: "relative",
+          height: "300px",
+          marginTop: "-200px",
         }}
       >
         <div className="row">
