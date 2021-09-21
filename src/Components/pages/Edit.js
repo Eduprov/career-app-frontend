@@ -142,7 +142,7 @@ const Edit = ({ match }) => {
           <input
             type="text"
             className="form-control"
-            value={ssl}
+            value={sslc}
             onChange={(obj) => processSslc(obj.target.value)}
           />
         </div>
